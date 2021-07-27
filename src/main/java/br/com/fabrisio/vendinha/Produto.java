@@ -10,7 +10,7 @@ public class Produto {
     private BigDecimal preco;
     private Integer quantidade;
 
-    public Produto(String nomeProduto2) {
+    public Produto() {
 
         this.nomeProduto = "Arroz";
         this.preco = BigDecimal.valueOf(3.5);
@@ -23,5 +23,8 @@ public class Produto {
 
     public Integer getQtd(){
         return quantidade;
+    }
+    public String getNomeProduto(){
+        return nomeProduto;
     }
 }
