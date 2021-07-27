@@ -12,7 +12,7 @@ public class Produto {
 
     public Produto(String nomeProduto2) {
 
-        this.nomeProduto = nomeProduto2;
+        this.nomeProduto = "Arroz";
         this.preco = BigDecimal.valueOf(3.5);
         this.quantidade = 10;
     }

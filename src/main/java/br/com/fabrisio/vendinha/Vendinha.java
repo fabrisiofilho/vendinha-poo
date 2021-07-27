@@ -12,7 +12,8 @@ public class Vendinha {
             Integer moneyClient;
             String nomeProduto;
             Integer quantidadeProduto;
-    
+            
+            
             System.out.println("Bem-vindo a Vendinha");
             System.out.println("Qual o seu nome:");
             nameClient = ler.next();
