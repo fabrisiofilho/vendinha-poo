@@ -30,8 +30,7 @@ public class Compra {
 
         BigDecimal p = BigDecimal.valueOf(qtd);
 
-        if(qtd<qtdCompra){
-            qtd = qtd - qtdCompra;
+        if(qtd<=qtdCompra){
             troco = dinheiroClient.subtract(precoCompra.multiply(p));
             Integer trocoInt = 0;
             trocoInt = Integer.valueOf(troco.intValue());

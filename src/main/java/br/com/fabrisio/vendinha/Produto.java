@@ -28,6 +28,7 @@ public class Produto {
     public Integer getQtd(){
         return quantidade;
     }
+    
     public String getNomeProduto(){
         return nomeProduto;
     }
