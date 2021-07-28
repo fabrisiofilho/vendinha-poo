@@ -5,14 +5,14 @@ import java.util.Scanner;
 public class Vendinha {
 
     public static void main(String[] args) {
-        
-        try (Scanner ler = new Scanner(System.in)){
+
+        try (Scanner ler = new Scanner(System.in)) {
             String nameClient;
             String cpfClient;
             Integer moneyClient;
             String nomeProduto;
             Integer quantidadeProduto;
-            
+
             Produto produto1 = new Produto();
             System.out.println("Produto - " + produto1.getNomeProduto());
             System.out.println("Preço - " + produto1.getPreco());
@@ -31,6 +31,10 @@ public class Vendinha {
             moneyClient = ler.nextInt();
             Cliente cliente1 = new Cliente(nameClient, cpfClient, moneyClient);
             cliente1.comprar(produto1, quantidadeProduto, cliente1);
+            System.out.println("---------------------Atualização-do-estoque---------------------");
+            System.out.println("Produto - " + produto1.getNomeProduto());
+            System.out.println("Preço - " + produto1.getPreco());
+            System.out.println("Qtd em estoque - " + produto1.getQtd());
 
         } catch (Exception e) {
 

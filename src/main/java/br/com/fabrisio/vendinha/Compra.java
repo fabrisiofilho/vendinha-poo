@@ -37,12 +37,13 @@ public class Compra {
             trocoInt = Integer.valueOf(troco.intValue());
             System.out.println(getCompra(trocoInt));
             if(trocoInt>0){
-                System.out.println("Troco:" + troco);
+                System.out.println("Troco : " + troco);
             }else if(trocoInt<0){
-                System.out.println("Falta:" + troco);
+                System.out.println("Falta : " + troco);
             }else{
                 System.out.println("Valor Correto");
             }
+            produto1.atualizar(qtd);
         }else{
             System.out.println("Solicitasse mais do que temos em estoque");
         }

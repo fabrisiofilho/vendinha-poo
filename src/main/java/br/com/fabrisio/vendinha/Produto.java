@@ -21,6 +21,10 @@ public class Produto {
         return preco;
     }
 
+    public void atualizar(Integer qtd){
+        quantidade = quantidade - qtd;
+    }
+
     public Integer getQtd(){
         return quantidade;
     }
